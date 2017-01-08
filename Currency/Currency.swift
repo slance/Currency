@@ -7,37 +7,24 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
+import ObjectMapper
 
 class Currency: BaseModel {
     
     var name: String?
     var code: String?
     
-
-    class func list(success: @escaping (Array<Currency>) -> Void) {
-        Alamofire.request("https://op.juhe.cn/onebox/exchange/list",
-                          method: .post,
-                          parameters: [ "key" : "30b8e8d8bd3ee4454a95abac2d4c7280"])
-            .validate(contentType: ["application/json"])
-            .responseJSON { (response) in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                if json["error_code"].int == 0 {
-                    var array = Array<Currency>()
-                    for data in json["result"]["list"].array! {
-                        let currency = Currency()
-                        currency.name = data["name"].string
-                        currency.code = data["code"].string
-                        array.append(currency)
-                    }
-                    success(array)
-                }
-            case .failure(let error):
-                print(error)
-            }
-        }
+    required init?(map: Map) {
+        super.init(map: map)
     }
+    
+    override func mapping(map: Map) {
+        name <- map["name"]
+        code <- map["code"]
+    }
+    
+    override var description: String {
+        return "\(super.description), name:\(name), code:\(code)"
+    }
+    
 }
