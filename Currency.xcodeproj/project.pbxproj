@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E0C80661E2233200025E7C2 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0C80651E2233200025E7C2 /* BaseModel.swift */; };
 		7E1C41671E225849009789D8 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C41661E225849009789D8 /* CurrencyService.swift */; };
+		7E1C41691E225D6C009789D8 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C41681E225D6C009789D8 /* Conversion.swift */; };
 		7E6FEBE31E21E83E006AE61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FEBE21E21E83E006AE61A /* AppDelegate.swift */; };
 		7E6FEBE51E21E83E006AE61A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FEBE41E21E83E006AE61A /* ViewController.swift */; };
 		7E6FEBE81E21E83E006AE61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FEBE61E21E83E006AE61A /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		4ABAF3297AFF03EDDAB4F570 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.release.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
 		7E0C80651E2233200025E7C2 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		7E1C41661E225849009789D8 /* CurrencyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		7E1C41681E225D6C009789D8 /* Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
 		7E6FEBDF1E21E83E006AE61A /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6FEBE21E21E83E006AE61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E6FEBE41E21E83E006AE61A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				7E0C80651E2233200025E7C2 /* BaseModel.swift */,
 				7EEC21AB1E2235A700EB68E0 /* Currency.swift */,
+				7E1C41681E225D6C009789D8 /* Conversion.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				7E0C80661E2233200025E7C2 /* BaseModel.swift in Sources */,
 				7E1C41671E225849009789D8 /* CurrencyService.swift in Sources */,
 				7E6FEBE51E21E83E006AE61A /* ViewController.swift in Sources */,
+				7E1C41691E225D6C009789D8 /* Conversion.swift in Sources */,
 				7EAEF4B61E224D8800679CBF /* BaseService.swift in Sources */,
 				7E6FEBE31E21E83E006AE61A /* AppDelegate.swift in Sources */,
 			);

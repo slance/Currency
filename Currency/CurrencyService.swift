@@ -28,5 +28,23 @@ class CurrencyService: NSObject {
                             }
             })
     }
+    
+    class func rateConverter(from: String!, to: String!, success: @escaping ([Conversion]) -> Void) {
+        Alamofire.request("https://op.juhe.cn/onebox/exchange/currency",
+                          method: .post,
+                          parameters: [ "key": "30b8e8d8bd3ee4454a95abac2d4c7280",
+                                        "from": from,
+                                        "to": to ])
+            .validate(contentType: ["application/json"])
+            .responseArray(keyPath: "result",
+                           completionHandler: { (response: DataResponse<[Conversion]>) in
+                            switch response.result {
+                            case .success:
+                                success(response.result.value!)
+                            case .failure(let error):
+                                print(error)
+                            }
+            })
+    }
 
 }
