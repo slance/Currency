@@ -11,7 +11,6 @@
 		7E1C41671E225849009789D8 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C41661E225849009789D8 /* CurrencyService.swift */; };
 		7E1C41691E225D6C009789D8 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1C41681E225D6C009789D8 /* Conversion.swift */; };
 		7E6FEBE31E21E83E006AE61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FEBE21E21E83E006AE61A /* AppDelegate.swift */; };
-		7E6FEBE51E21E83E006AE61A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FEBE41E21E83E006AE61A /* ViewController.swift */; };
 		7E6FEBE81E21E83E006AE61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FEBE61E21E83E006AE61A /* Main.storyboard */; };
 		7E6FEBEA1E21E83E006AE61A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FEBE91E21E83E006AE61A /* Assets.xcassets */; };
 		7E6FEBED1E21E83E006AE61A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6FEBEB1E21E83E006AE61A /* LaunchScreen.storyboard */; };
@@ -19,6 +18,7 @@
 		7E6FEC031E21E83E006AE61A /* CurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FEC021E21E83E006AE61A /* CurrencyUITests.swift */; };
 		7EAEF4B61E224D8800679CBF /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAEF4B51E224D8800679CBF /* BaseService.swift */; };
 		7EC90E571E239AE0009ED220 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC90E551E239AE0009ED220 /* BaseViewController.swift */; };
+		7EC90E5A1E239BFF009ED220 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC90E591E239BFF009ED220 /* HomeController.swift */; };
 		7EEC21AC1E2235A700EB68E0 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC21AB1E2235A700EB68E0 /* Currency.swift */; };
 		8653EC6FA2D377D56779F913 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C484F5E56A20A572CBF0D0D /* Pods_Currency.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +49,6 @@
 		7E1C41681E225D6C009789D8 /* Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
 		7E6FEBDF1E21E83E006AE61A /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6FEBE21E21E83E006AE61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E6FEBE41E21E83E006AE61A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E6FEBE71E21E83E006AE61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E6FEBE91E21E83E006AE61A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E6FEBEC1E21E83E006AE61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		7E6FEC041E21E83E006AE61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EAEF4B51E224D8800679CBF /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		7EC90E551E239AE0009ED220 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7EC90E591E239BFF009ED220 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		7EEC21AB1E2235A700EB68E0 /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +138,6 @@
 				7EC328311E224D3C00655995 /* Service */,
 				7E0B968A1E2224D80017D5BA /* Model */,
 				7E6FEBE21E21E83E006AE61A /* AppDelegate.swift */,
-				7E6FEBE41E21E83E006AE61A /* ViewController.swift */,
 				7E6FEBE61E21E83E006AE61A /* Main.storyboard */,
 				7E6FEBE91E21E83E006AE61A /* Assets.xcassets */,
 				7E6FEBEB1E21E83E006AE61A /* LaunchScreen.storyboard */,
@@ -178,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				7EC90E551E239AE0009ED220 /* BaseViewController.swift */,
+				7EC90E591E239BFF009ED220 /* HomeController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -379,8 +379,8 @@
 				7EEC21AC1E2235A700EB68E0 /* Currency.swift in Sources */,
 				7E0C80661E2233200025E7C2 /* BaseModel.swift in Sources */,
 				7E1C41671E225849009789D8 /* CurrencyService.swift in Sources */,
-				7E6FEBE51E21E83E006AE61A /* ViewController.swift in Sources */,
 				7E1C41691E225D6C009789D8 /* Conversion.swift in Sources */,
+				7EC90E5A1E239BFF009ED220 /* HomeController.swift in Sources */,
 				7EAEF4B61E224D8800679CBF /* BaseService.swift in Sources */,
 				7EC90E571E239AE0009ED220 /* BaseViewController.swift in Sources */,
 				7E6FEBE31E21E83E006AE61A /* AppDelegate.swift in Sources */,
