@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import SwiftyJSON
 import AlamofireObjectMapper
 
 class CurrencyService: NSObject {
@@ -16,7 +15,7 @@ class CurrencyService: NSObject {
     class func currencyList(success: @escaping ([Currency]) -> Void) {
         Alamofire.request("https://op.juhe.cn/onebox/exchange/list",
                           method: .post,
-                          parameters: [ "key" : "30b8e8d8bd3ee4454a95abac2d4c7280"])
+                          parameters: ["key": "30b8e8d8bd3ee4454a95abac2d4c7280"])
             .validate(contentType: ["application/json"])
             .responseArray(keyPath: "result.list",
                            completionHandler: { (response: DataResponse<[Currency]>) in
@@ -32,9 +31,9 @@ class CurrencyService: NSObject {
     class func rateConverter(from: String!, to: String!, success: @escaping ([Conversion]) -> Void) {
         Alamofire.request("https://op.juhe.cn/onebox/exchange/currency",
                           method: .post,
-                          parameters: [ "key": "30b8e8d8bd3ee4454a95abac2d4c7280",
-                                        "from": from,
-                                        "to": to ])
+                          parameters: ["key": "30b8e8d8bd3ee4454a95abac2d4c7280",
+                                       "from": from,
+                                       "to": to])
             .validate(contentType: ["application/json"])
             .responseArray(keyPath: "result",
                            completionHandler: { (response: DataResponse<[Conversion]>) in
