@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,25 +17,25 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Owa-ca-pIH">
-                        <rect key="frame" x="24" y="19" width="60" height="42"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <rect key="frame" x="32" y="19" width="42" height="42"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="1mv-od-Fcz"/>
+                            <constraint firstAttribute="width" constant="42" id="1mv-od-Fcz"/>
+                            <constraint firstAttribute="width" secondItem="Owa-ca-pIH" secondAttribute="height" id="4gc-SX-7zR"/>
                             <constraint firstAttribute="height" constant="42" id="zQr-5s-ASr"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CNY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHI-Lk-bcr">
-                        <rect key="frame" x="92" y="28" width="42" height="24"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <rect key="frame" x="98" y="25.5" width="49" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydx-Dc-V4k">
-                        <rect key="frame" x="245" y="22" width="51" height="36"/>
+                        <rect key="frame" x="237" y="22" width="51" height="36"/>
                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -42,12 +43,12 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="yHI-Lk-bcr" firstAttribute="centerY" secondItem="Owa-ca-pIH" secondAttribute="centerY" id="Out-3A-Dpr"/>
-                    <constraint firstItem="Owa-ca-pIH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="UiE-7B-p92"/>
-                    <constraint firstItem="yHI-Lk-bcr" firstAttribute="leading" secondItem="Owa-ca-pIH" secondAttribute="trailing" constant="8" id="cmc-q4-k0Z"/>
+                    <constraint firstItem="Owa-ca-pIH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="24" id="UiE-7B-p92"/>
+                    <constraint firstItem="yHI-Lk-bcr" firstAttribute="leading" secondItem="Owa-ca-pIH" secondAttribute="trailing" constant="24" id="cmc-q4-k0Z"/>
                     <constraint firstItem="Ydx-Dc-V4k" firstAttribute="centerY" secondItem="yHI-Lk-bcr" secondAttribute="centerY" id="fez-2f-fNh"/>
                     <constraint firstItem="Ydx-Dc-V4k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yHI-Lk-bcr" secondAttribute="trailing" id="fwH-qs-vwZ"/>
                     <constraint firstItem="Owa-ca-pIH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nr2-cN-Rz4"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Ydx-Dc-V4k" secondAttribute="trailing" constant="16" id="xga-mV-Lk5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ydx-Dc-V4k" secondAttribute="trailing" constant="24" id="xga-mV-Lk5"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

@@ -12,8 +12,8 @@ class HomeController: BaseViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var timeSeriesView = UIView(frame: UIScreen.main.bounds)
-    var favoriteView = UITableView(frame: UIScreen.main.bounds, style: .plain)
+    var timeSeriesView = UIView(frame: CGRect(origin: CGPoint.zero, size: UIScreen.main.bounds.size))
+    var favoriteView = UITableView(frame: CGRect(origin: CGPoint(x: UIScreen.main.bounds.width, y: 0), size: UIScreen.main.bounds.size), style: .plain)
     
     let favoriteDelegate = FavoriteTableDelegate()
     
@@ -26,10 +26,9 @@ class HomeController: BaseViewController {
         self.favoriteView.dataSource = favoriteDelegate
         self.favoriteView.delegate = favoriteDelegate
         self.favoriteView.register(UINib(nibName: "FavoriteCell", bundle: nil), forCellReuseIdentifier: favoriteDelegate.cellIdentifier)
-        self.favoriteView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 20))
+        self.favoriteView.tableHeaderView = UIView(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 0, height: 20)))
         self.favoriteView.tableFooterView = UIView()
         self.favoriteView.rowHeight = 81
-        self.favoriteView.frame.origin.x = UIScreen.main.bounds.width
         self.scrollView.addSubview(self.favoriteView)
         
         self.scrollView.contentSize.width = UIScreen.main.bounds.width * 2
