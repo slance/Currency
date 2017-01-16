@@ -15,6 +15,7 @@ class HomeController: BaseViewController {
     var timeSeriesView = UIView(frame: CGRect(origin: CGPoint.zero, size: UIScreen.main.bounds.size))
     var favoriteView = UITableView(frame: CGRect(origin: CGPoint(x: UIScreen.main.bounds.width, y: 0), size: UIScreen.main.bounds.size), style: .plain)
     
+    let keyboardView = UINib(nibName: "KeyboardView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! KeyboardView
     let favoriteDelegate = FavoriteTableDelegate()
     
     override func viewDidLoad() {
