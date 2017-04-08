@@ -56,7 +56,7 @@ class Conversion: BaseModel {
     }
     
     override var description: String {
-        return "\(super.description), currencyF: \(currencyF), currencyF_Name: \(currencyF_Name), currencyT: \(currencyT), currencyT_Name: \(currencyT_Name), currencyFD: \(currencyFD), exchange: \(exchange), result: \(result), updateTime: \(updateTime)"
+        return "\(super.description), currencyF: \(String(describing: currencyF)), currencyF_Name: \(String(describing: currencyF_Name)), currencyT: \(String(describing: currencyT)), currencyT_Name: \(String(describing: currencyT_Name)), currencyFD: \(String(describing: currencyFD)), exchange: \(String(describing: exchange)), result: \(String(describing: result)), updateTime: \(String(describing: updateTime))"
     }
     
 }

@@ -43,7 +43,7 @@ class YQLModel<T: Mappable>: BaseModel {
     }
     
     override var description: String {
-        return "\(super.description), count:\(self.count), created:\(self.created), lang:\(self.lang), results:\(self.results)"
+        return "\(super.description), count:\(self.count), created:\(String(describing: self.created)), lang:\(String(describing: self.lang)), results:\(String(describing: self.results))"
     }
 
 }

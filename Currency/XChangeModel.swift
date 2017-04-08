@@ -36,7 +36,7 @@ class XChangeModel: BaseModel {
     }
     
     override var description: String {
-        return "\(super.description), rate:\(self.rate)"
+        return "\(super.description), rate:\(String(describing: self.rate))"
     }
 
 }
@@ -66,7 +66,7 @@ class XChangeRateModel: BaseModel {
     }
     
     override var description: String {
-        return "\(super.description), id:\(self.id), name:\(self.name), rate:\(self.rate), date:\(self.date), ask:\(self.ask), bid:\(self.bid)"
+        return "\(super.description), id:\(self.id), name:\(String(describing: self.name)), rate:\(self.rate), date:\(String(describing: self.date)), ask:\(self.ask), bid:\(self.bid)"
     }
 
 }

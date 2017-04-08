@@ -42,7 +42,7 @@ class Currency: BaseModel {
     }
     
     override var description: String {
-        return "\(super.description), name:\(name), code:\(code)"
+        return "\(super.description), name:\(String(describing: name)), code:\(String(describing: code))"
     }
     
 }
